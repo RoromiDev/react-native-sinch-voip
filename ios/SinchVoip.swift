@@ -7,7 +7,7 @@
 import Foundation
 import Sinch
 
-@available(iOS 10.0, *)
+@available(iOS 11.0, *)
 @objc(SinchVoip)
 class SinchVoip: RCTEventEmitter {
     static var sharedInstance: SinchVoip?
@@ -172,7 +172,7 @@ class SinchVoip: RCTEventEmitter {
     }
 }
 
-@available(iOS 10.0, *)
+@available(iOS 11.0, *)
 extension SinchVoip: SINClientDelegate {
     func clientDidStart(_ client: SINClient!) {}
     
@@ -183,7 +183,7 @@ extension SinchVoip: SINClientDelegate {
     func client(_ client: SINClient!, requiresRegistrationCredentials registrationCallback: SINClientRegistration!) {}
 }
 
-@available(iOS 10.0, *)
+@available(iOS 11.0, *)
 extension SinchVoip: SINCallClientDelegate {
     func client(_ client: SINCallClient!, willReceiveIncomingCall call: SINCall!) {
         print("SinchVoip:: Will received incoming call !")
@@ -208,7 +208,7 @@ extension SinchVoip: SINCallClientDelegate {
     }
 }
 
-@available(iOS 10.0, *)
+@available(iOS 11.0, *)
 extension SinchVoip: SINCallDelegate {
     func callDidProgress(_ call: SINCall!) {}
     

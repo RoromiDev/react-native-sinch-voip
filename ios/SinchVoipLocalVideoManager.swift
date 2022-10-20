@@ -6,7 +6,7 @@
 import Foundation
 import Sinch
 
-@available(iOS 10.0, *)
+@available(iOS 11.0, *)
 @objc(SinchVoipLocalVideoManager)
 class SinchVoipLocalVideoManager: RCTViewManager {
     static let sharedInstance = SinchVoipLocalVideoManager()
