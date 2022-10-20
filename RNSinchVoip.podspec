@@ -24,6 +24,6 @@ Pod::Spec.new do |s|
 
   s.dependency "React-Core"
   
-  s.dependency "SinchRTC", "~> 4.2.6"
+  s.dependency "SinchRTC", "~> 5.16.5"
 end
 
